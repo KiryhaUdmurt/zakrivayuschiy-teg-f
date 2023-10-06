@@ -4,3 +4,18 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+    --bg-color: black;
+    --acc-color: #00CC14;
+    --wgth: 465;
+    --text-stroke: black;
+
+}
+
+:root.theme-light {
+    --bg-color: white;
+    --acc-color: black;
+    --wgth: 400;
+    --text-stroke: white;
+}
