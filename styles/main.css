@@ -1,0 +1,160 @@
+/* ------------------------СЕКЦИЯ С КАРТОЧКАМИ----------------------------- */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+  }
+  
+  .card {
+    border: 2px solid var(--acc-color);
+    background-color: var(--bg-color);
+  }
+  
+  .card__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 1rem;
+  }
+  
+  .card__img-container {
+    position: relative;
+  }
+  
+  .card__img {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .card__img-text {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-family: var(--family-accent);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    mix-blend-mode: hard-light;
+    opacity: 0.5;
+    text-shadow: -1px 0 var(--text-stroke), 0 1px var(--text-stroke),
+      1px 0 var(--text-stroke), 0 -1px var(--text-stroke);
+  }
+  
+  @supports (
+    (text-stroke: 1px var(--text-stroke)) or
+      (-webkit-text-stroke: 1px var(--text-stroke))
+  ) {
+    .card__img-text {
+      -webkit-text-stroke: 1px var(--text-stroke);
+      text-stroke: 1px var(--text-stroke);
+      text-shadow: none;
+    }
+  }
+  
+  .card__content {
+    width: 90%;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 27px auto;
+  }
+  
+  .card__subtext {
+    width: 90%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 auto 25px;
+  }
+  
+  .card__buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    margin: 0 1.5rem 1.5rem 0;
+  }
+  
+  .card__icon-button {
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: border 0.3s ease;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  
+  .card__icon-button:focus {
+    outline: none;
+  }
+  
+  .card__icon-button:focus-visible {
+    border: 2px solid var(--acc-color);
+    outline: none;
+  }
+
+  .card__like-button {
+    width: 94px;
+    cursor: pointer;
+    padding: 6px 0px;
+    border: 2px solid var(--acc-color);
+    outline: none;
+    background-color: transparent;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .card__like-button:focus {
+    box-shadow: 2px 2px currentColor;
+  }
+  
+  .card__like-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--acc-color);
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card__like-button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button__text {
+    font-family: var(--family-accent);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    color: var(--text-color);
+    position: relative;
+    /* z-index: 10; */
+    mix-blend-mode: difference;
+  }
+
+  .saturate {
+    filter: saturate(2.2);
+  }
+
+  .blur {
+    filter: blur(3px);
+  }
+
+  .contrast {
+    filter: contrast(200%);
+  }
+
+  .grayscale {
+    filter: grayscale(85%);
+  }
+
+  .hue-rotate {
+    filter: hue-rotate(0.7turn);
+  }

@@ -1,19 +1,11 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-/* @import url(../fonts/fonts.css); */
 
 :root {
-  /* --font-inter: 'Inter';
-    --font-p2: 'Press Start 2P'; */
   --family-main: "Inter";
   --family-accent: "Press Start 2P";
-  /* --fw-400: 400;
-    --fw-465: 465; */
+
   --wgth: 400;
   --wgth: 465;
-  /* --bg-dark: black;
-    --bg-light: white; */
-  /* --acc-dark: black;
-    --acc-light: #00CC14; */
+
   --bg-color: white;
   --bg-color: black;
   --acc-color: #00cc14;

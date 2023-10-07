@@ -1,0 +1,47 @@
+/* ---------------------------ФУТЕР------------------------- */
+
+.footer {
+}
+
+.footer__save {
+  background-color: var(--bg-color);
+  cursor: pointer;
+  margin: 54px auto 105px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 18.5px 21px;
+  border: 2px solid var(--acc-color);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.footer__save:focus {
+  box-shadow: 2px 2px currentColor;
+}
+
+.footer__save::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--acc-color);
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.footer__save:hover::before {
+  transform: scaleX(1);
+}
+
+.floppy-svg {
+  position: relative;
+  color: var(--text-color);
+  mix-blend-mode: difference;
+  width: 21px;
+  height: 21px;
+}

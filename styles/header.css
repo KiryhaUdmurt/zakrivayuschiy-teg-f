@@ -1,0 +1,73 @@
+/* ------------------ХЕДЕР--------------------- */
+
+.header {
+    font-family: var(--family-accent);
+    height: 364px;
+    text-align: center;
+    border: 2px solid var(--acc-color);
+    margin: 104px 0;
+    background-color: var(--bg-color);
+  }
+  
+  .header__title {
+    margin: 130px 0 20px;
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+  
+  .header__subtitle {
+    font-size: 23px;
+    margin-bottom: 25px;
+  }
+  
+  .theme-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .theme-menu__button {
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .theme-menu__button:disabled:before {
+    content: "▶";
+    position: absolute;
+    left: -15px;
+    animation: moving infinite 0.5s ease-in-out alternate-reverse;
+  }
+  
+  .theme-menu__button:hover {
+    opacity: 0.6;
+  }
+  
+  .theme-menu__button:disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  .theme-menu__button:focus-visible {
+    opacity: 0.6;
+  }
+  
+  .theme-menu__button::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: var(--acc-color);
+    transition: width 0.3s ease;
+  }
+  
+  .theme-menu__button:focus-visible::after {
+    width: 100%;
+    opacity: 0.6;
+  }
