@@ -18,10 +18,14 @@
   --bg-color: black;
   --acc-color: #00cc14;
   --acc-color: black;
-  --bg-img: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
-    repeating-linear-gradient(180deg, #d3d3d3, transparent 2px);
-  --bg-img: repeating-linear-gradient(90deg, #000, transparent 2px),
-    repeating-linear-gradient(180deg, #000, transparent 2px);
+  --bg-img: repeating-linear-gradient(to right, #d3d3d3 2px, transparent 4px),
+  repeating-linear-gradient(to bottom, #e7e7e7 2px, #1a1a1a 4px),
+  linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --bg-img: repeating-linear-gradient(to right, #d3d3d3 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7 2px, #1a1a1a 4px),
+    linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
     --text-stroke: white;
     --text-stroke: black;
+    --contour-color: black;
+    --fill-color: red;
 }

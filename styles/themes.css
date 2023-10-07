@@ -6,16 +6,25 @@
 */
 
 :root.theme-dark {
-    --bg-color: black;
-    --acc-color: #00CC14;
-    --wgth: 465;
-    --text-stroke: black;
-
+  --bg-color: black;
+  --acc-color: #00cc14;
+  --wgth: 465;
+  --text-stroke: black;
+  --bg-img: repeating-linear-gradient(to right, #000 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #007f0c 2px, #004306 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+  --text-color: #00cc14;
+  --contour-color: #00cc14;
 }
 
 :root.theme-light {
-    --bg-color: white;
-    --acc-color: black;
-    --wgth: 400;
-    --text-stroke: white;
+  --bg-color: white;
+  --acc-color: black;
+  --wgth: 400;
+  --text-stroke: white;
+  --bg-img: repeating-linear-gradient(to right, #d3d3d3 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7 2px, #1a1a1a 4px),
+    linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --text-color: #fff;
+  --contour-color: black;
 }
