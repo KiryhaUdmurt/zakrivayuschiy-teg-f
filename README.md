@@ -1,4 +1,4 @@
-# [Time tracking dashboard](https://zakrivayuschiy-teg-f.vercel.app/)
+# [Закрывающий тег](https://zakrivayuschiy-teg-f.vercel.app/)
 
 *[Челлендж с сайта Frontend Mentor](https://www.frontendmentor.io/home)
 
