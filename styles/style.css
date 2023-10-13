@@ -1,4 +1,7 @@
-
+:root {
+  display: flex;
+  justify-content: center;
+}
 
 /* -----------------ОСНОВЫНЕ СТИЛИ-------------------- */
 .page {
